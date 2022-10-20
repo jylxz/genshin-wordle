@@ -1,0 +1,37 @@
+.modal-welcome-choose {
+  text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem
+}
+
+.modal-welcome-buttons {
+  display: flex;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.modal-welcome-buttons button {
+  font-family: "Poppins";
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 0.25rem;
+  background-color: transparent;
+  color: white;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.modal-button-word:hover {
+  background-color: gray;
+  border-bottom-left-radius: 20px;
+}
+.modal-button-freeplay:hover {
+  background-color: gray;
+  border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,45 @@
+.keyboard {
+  padding: 1rem 0.5rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.keyboard > div {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.keyboard-key {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: gray;
+  color: white;
+  width: 100%;
+  max-width: 3rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s linear;
+}
+
+.backspace, .enter {
+  max-width: 4rem;
+}
+
+.keyboard-key.incorrect {
+  background-color: black;
+  color: gray
+}
+
+.keyboard-key.close {
+  background-color: rgb(250, 176, 39);
+}
+
+.keyboard-key.correct {
+  background-color: rgb(35, 126, 35)
+}

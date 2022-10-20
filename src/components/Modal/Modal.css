@@ -1,0 +1,77 @@
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 28rem;
+  max-width: 90%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.modal-main {
+  padding: 0 1rem;
+}
+
+.modal-main h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(199, 199, 199);
+}
+
+.modal-paimon {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.modal-buttons-heading {
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem
+}
+
+.modal-play-buttons {
+  border-top: 1px solid white;
+}
+
+.modal-play-freeplay {
+  cursor: pointer;
+  font-family: "Poppins";
+  background: transparent;
+  color: white;
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.modal-play-freeplay:hover {
+  background-color: gray;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.modal-credit {
+  background-color: white;
+  color: black;
+}
+
+.modal-correct {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}

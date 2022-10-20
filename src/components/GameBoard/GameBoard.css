@@ -1,0 +1,60 @@
+.board-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.board-row {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.2rem;
+}
+
+.board-row.invalid {
+  animation: shake 0.5s
+}
+
+.board-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  font-size: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s linear, color 0.3 linear;
+  transform: translate3d(0, 0, 0);
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  25%,
+  75% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+.board-box.incorrect {
+  background-color: black;
+  color: gray;
+}
+
+.board-box.correct {
+  background-color: rgb(35, 126, 35);
+}
+
+.board-box.close {
+  background-color: rgb(250, 176, 39);
+}

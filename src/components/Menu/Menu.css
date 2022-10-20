@@ -1,0 +1,54 @@
+.menu-wrapper {
+  position: absolute;
+  top: 4.5rem;
+  width: 100%;
+  height: calc(100vh - 4.5rem);
+  z-index: 1000;
+}
+
+.menu {
+  height: 100%;
+  width: 18rem;
+  background-color: rgba(43, 42, 42, 0.89);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white
+}
+
+.menu-wrapper.close {
+  transition: translate 1s;
+  translate: -100% 0;
+}
+
+.menu-wrapper.open {
+  transition: translate 0.5s;
+
+  translate: 0 0;
+}
+
+.menu-bg-credit {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-audio-player {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0.5rem
+}
+
+.background-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.background-artist {
+  display: flex;
+  justify-content: center;
+}
+
